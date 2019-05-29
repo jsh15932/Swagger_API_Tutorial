@@ -10,7 +10,8 @@ app.get('/', function (req, res) {
 app.get('/adder', function (req, res) {
   let one = req.query.one;
   let two = req.query.two;
-  let result = Number(one) + Number(two);
+  let three = req.query.three;
+  let result = Number(one) + Number(two) + Number(three);
   res.send(String(result));
 });
 
